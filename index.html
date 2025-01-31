@@ -52,37 +52,29 @@
 		</script>
 	</head>
 	<body class="adlam-font">
-		<header>
-			<div
-				class="sora-font h-16 flex justify-between bg-[#FFF9F4] items-center"
+		<div class="bg-[#FFF9F4]">
+			<nav
+				class="max-w-7xl px-3 mx-auto sora-font py-6 flex justify-between items-center"
 			>
-				<div class="flex justify-center items-center">
-					<img class="w-12 h-12" src="assets/logo-header.png" alt="logo" />
-					<h1 class="text-2xl">
-						Browse<span class="text-[#FFDC26]">4</span> Pets
-					</h1>
+				<div class="flex items-center space-x-2">
+					<img src="./assets/logo-header.png" alt="Logo" class="w-8 h-8" />
+					<span class="hidden md:block font-bold text-lg"
+						>Browse <span class="text-yellow-400">4</span> Pets</span
+					>
 				</div>
-				<div>
-					<ul class="flex gap-6 items-center">
-						<li class="hover:text-[#E7A500] text-xl">
-							<a href="#">Find a pet</a>
-						</li>
-						<li class="hover:text-[#E7A500] text-xl">
-							<a href="#">Breeds</a>
-						</li>
-						<li class="hover:text-[#E7A500] text-xl">
-							<a href="#">Contact us</a>
-						</li>
-					</ul>
-				</div>
-				<div class="flex gap-4 items-center">
+				<ul class="hidden md:flex items-center space-x-6">
+					<li><a href="#" class="hover:text-yellow-500">Find a pet</a></li>
+					<li><a href="#" class="hover:text-yellow-500">Breeds</a></li>
+					<li><a href="#" class="hover:text-yellow-500">Contact us</a></li>
+				</ul>
+				<div class="hidden md:flex items-center space-x-4">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke-width="1.5"
 						stroke="currentColor"
-						class="size-6"
+						class="size-6 item"
 					>
 						<path
 							stroke-linecap="round"
@@ -104,23 +96,20 @@
 							d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
 						/>
 					</svg>
-					<a href="#"
-						><button
-							class="btn btn-outline btn-warning border-color-btn-custom-color"
-						>
-							Login
-						</button></a
+					<button
+						class="border border-yellow-400 hover:bg-yellow-500 px-4 py-2 rounded-md"
 					>
-					<a href="#"
-						><button class="btn btn-warning bg-btn-custom-color">
-							Register
-						</button></a
+						Login
+					</button>
+					<button
+						class="bg-yellow-400 hover:bg-yellow-500 px-4 py-2 rounded-md text-white"
 					>
+						Register
+					</button>
 				</div>
-				<div class="lg:hidden ">
+				<button id="menu-btn" class="md:hidden" title="Menu">
 					<svg
-						id="menu-icon"
-						class="w-7 h-7"
+						class="w-8 h-8"
 						fill="none"
 						stroke="currentColor"
 						stroke-width="2"
@@ -133,7 +122,34 @@
 							d="M4 6h16M4 12h16M4 18h16"
 						></path>
 					</svg>
-				</div>
+				</button>
+			</nav>
+		</div>
+		<!-- Hero section -->
+		<header class="relative px-3 max-w-7xl mx-auto text-left py-20">
+			<div class="absolute md:inset-0">
+				<img
+					src="./assets/cat-big.png"
+					alt="Pet"
+					class="max-w-7xl mx-auto pt-36 md:pt-0 h-svh top-32 w-full object-cover"
+				/>
+			</div>
+			<div class="relative z-20">
+				<h1 class="text-4xl font-bold">
+					Pamper Your Pet,<br />
+					Because They Deserve<br />
+					the Best
+				</h1>
+				<p class="mt-4">
+					Discover a world of treats, toys, and essentials <br />
+					handpicked for your furry friends. Shop now and <br />
+					make tails wag with joy!
+				</p>
+				<button
+					class="mt-6 bg-yellow-400 hover:bg-yellow-500 px-6 py-2 sora-font rounded-md text-white"
+				>
+					Find a pet
+				</button>
 			</div>
 		</header>
 	</body>
