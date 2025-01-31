@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Browse Pets</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css"
+		/>
+		<style>
+			@keyframes slide {
+				0% {
+					transform: translateX(-10px);
+				}
+				50% {
+					transform: translateX(10px);
+				}
+				100% {
+					transform: translateX(-10px);
+				}
+			}
+			.animate-hero {
+				animation: slide 3s infinite ease-in-out;
+			}
+		</style>
+	</head>
+	<body class="bg-yellow-50">
+		<!-- Navbar -->
+		<nav class="flex justify-between p-4 bg-white shadow-md">
+			<div class="text-xl font-bold flex items-center space-x-2">
+				<span class="text-yellow-500">&#128062;</span> <span>Browse Pets</span>
+			</div>
+			<div class="space-x-4 hidden lg:flex">
+				<a href="#" class="hover:text-yellow-500">Find a pet</a>
+				<a href="#" class="hover:text-yellow-500">Breeds</a>
+				<a href="#" class="hover:text-yellow-500">Contact us</a>
+				<button class="bg-yellow-500 text-white px-4 py-2 rounded">
+					Login
+				</button>
+				<button class="bg-gray-900 text-white px-4 py-2 rounded">
+					Register
+				</button>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section class="text-center p-10 bg-white">
+			<h1 class="text-4xl font-bold">
+				Pamper Your Pet, <br />
+				Because They Deserve the Best
+			</h1>
+			<p class="mt-4">
+				Discover a world of treats, toys, and essentials handpicked for your
+				furry friends.
+			</p>
+			<button class="mt-6 bg-yellow-500 text-white px-6 py-3 rounded">
+				Find a pet
+			</button>
+			<div class="flex justify-center mt-6">
+				<img src="./assets/cat-big.png" alt="Cat" class="w-80 animate-hero" />
+			</div>
+		</section>
+
+		<!-- Categories Section -->
+		<section class="p-10">
+			<h2 class="text-2xl font-bold">Browse By Categories</h2>
+			<div class="grid grid-cols-2 lg:grid-cols-6 gap-4 mt-6">
+				<div class="p-4 bg-yellow-200 rounded text-center">Dog</div>
+				<div class="p-4 bg-yellow-200 rounded text-center">Fish</div>
+				<div class="p-4 bg-yellow-200 rounded text-center">Cat</div>
+				<div class="p-4 bg-yellow-200 rounded text-center">Birds</div>
+				<div class="p-4 bg-yellow-200 rounded text-center">Small Pet</div>
+				<div class="p-4 bg-yellow-200 rounded text-center">Rabbit</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="p-6 bg-yellow-500 text-white text-center">
+			<p>&copy; 2024 Browse Pets. All rights reserved.</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Browse4Pet</title>
+		<!-- Google fonts integration -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- DaisyUI and TAilwind integration -->
+
+		<!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			rel="shortcut icon"
+			href="./assets/logo-header.png"
+			type="image/x-icon"
+		/>
+		<style>
+			.sora-font {
+				font-family: "Sora", serif;
+				font-optical-sizing: auto;
+				font-weight: 400;
+				font-style: normal;
+			}
+			.adlam-font {
+				font-family: "ADLaM Display", serif;
+				font-weight: 400;
+				font-style: normal;
+			}
+		</style>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							clifford: "#da373d",
+							"btn-custom-color": "#FFDC26",
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body class="adlam-font">
+		<header>
+			<div
+				class="sora-font h-16 flex justify-between bg-[#FFF9F4] items-center"
+			>
+				<div class="flex justify-center items-center">
+					<img class="w-12 h-12" src="assets/logo-header.png" alt="logo" />
+					<h1 class="text-2xl">
+						Browse<span class="text-[#FFDC26]">4</span> Pets
+					</h1>
+				</div>
+				<div>
+					<ul class="flex gap-6 items-center">
+						<li class="hover:text-[#E7A500] text-xl">
+							<a href="#">Find a pet</a>
+						</li>
+						<li class="hover:text-[#E7A500] text-xl">
+							<a href="#">Breeds</a>
+						</li>
+						<li class="hover:text-[#E7A500] text-xl">
+							<a href="#">Contact us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="flex gap-4 items-center">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="size-6"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
+						/>
+					</svg>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="size-6"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+						/>
+					</svg>
+					<a href="#"
+						><button
+							class="btn btn-outline btn-warning border-color-btn-custom-color"
+						>
+							Login
+						</button></a
+					>
+					<a href="#"
+						><button class="btn btn-warning bg-btn-custom-color">
+							Register
+						</button></a
+					>
+				</div>
+				<div class="lg:hidden ">
+					<svg
+						id="menu-icon"
+						class="w-7 h-7"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M4 6h16M4 12h16M4 18h16"
+						></path>
+					</svg>
+				</div>
+			</div>
+		</header>
+	</body>
+</html>
